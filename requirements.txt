@@ -7,11 +7,12 @@ numpy==1.26.4
 regex==2024.5.15
 joblib==1.4.2
 
-# spaCy lower-level deps (pin to prebuilt wheels)
-blis==0.7.11
+# Pin spaCy backend deps to versions that have wheels available
+blis==0.7.11; python_version < "3.12"
 murmurhash==1.0.10
 preshed==3.0.9
 thinc==8.2.5
 srsly==2.4.8
+
 
 
